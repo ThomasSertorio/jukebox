@@ -9,6 +9,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'redis'
 
+gem 'carrierwave', '~> 1.0'
+gem 'fog-openstack'
+
 # Front Setup
 gem 'webpacker'
 
