@@ -12,6 +12,6 @@ CarrierWave.configure do |config|
   }
   config.fog_directory = ENV['BUCKET_NAME']
   config.asset_host = ENV['OS_HOST_URL']
-  config.fog_public = false
+  config.fog_public = true
 
 end

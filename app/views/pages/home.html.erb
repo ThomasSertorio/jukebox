@@ -1,2 +1,30 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+<iframe src="https://giphy.com/embed/rAww2Erweag1O" width="470" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dance-share-eurovisiongifs-rAww2Erweag1O"></a></p>
+<% content_for(:js) do %>
+<script>
+var sound = new Howl({
+  src: ["<%= @track.audio_file%>"],
+  // sprite: {
+  //   blast: [0, 3000],
+  //   laser: [4000, 1000],
+  //   winner: [6000, 5000]
+  // },
+  // autoplay: true,
+  // loop: true,
+  volume: 0.5,
+  onend: function() {
+    console.log('Finished!');
+  }
+});
+
+var id2 = sound.play();
+sound.rate(1.25);
+  window.setInterval(function() {
+    var toto = sound.seek();
+     console.log(toto);
+  }, 100);
+
+</script>
+<% end %>
+

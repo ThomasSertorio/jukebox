@@ -23,6 +23,8 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'rails-assets-howler', source: 'https://rails-assets.org'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
