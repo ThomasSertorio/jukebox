@@ -1,2 +1,37 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="big-container">
+  <div class="div-edito">
+    <div class="edito-gif">
+      <%= image_tag "gif01.gif" %>
+    </div>
+    <h2>
+      Startup, lifestyle, culture, inspiration
+    </h2>
+    <h3>
+      5 podcats par semaine, dans ta boîte mail
+    </h3>
+    <div class="newsletter-form">
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input :email %>
+      <%end%>
+    </div>
+    <div class="edito-text">
+      Parfois on trouve ça cool d’écouter des trucs cools au bureau.
+      Alors on vous prépare chaque semaine, une petite sélection de 5 podcasts à écouter.
+      <div class="speed">x 1.25</div>Parfois aussi, on est pressé et on veut les écouter en accélérer ;)
+    </div>
+    <div class="sign_by">
+      Vincent et Thomas
+    </div>
+    <div class="footer-edito">
+      <div class="text">
+        Si tu trouves ça cool...
+      </div>
+      <div class="fb-share">
+        Tape dans tes mains !
+      </div>
+    </div>
+  </div>
+  <div class="div-player">
+
+  </div>
+</div>
